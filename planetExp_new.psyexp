@@ -1,0 +1,449 @@
+<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="1.90.1">
+  <Settings>
+    <Param name="expName" updates="None" val="planetExp_new" valType="str"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="Window size (pixels)" updates="None" val="[1920, 1080]" valType="code"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="color" updates="None" val="$[1,1,1]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="Units" updates="None" val="use prefs" valType="str"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="OSF Project ID" updates="None" val="" valType="str"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <ImageComponent name="image">
+        <Param name="name" updates="None" val="image" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="size" updates="constant" val="(1920, 1080)" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="image" updates="set every repeat" val="$imageFile" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+      </ImageComponent>
+      <RatingScaleComponent name="rating">
+        <Param name="name" updates="None" val="rating" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="visualAnalogScale" updates="constant" val="False" valType="bool"/>
+        <Param name="categoryChoices" updates="constant" val="" valType="str"/>
+        <Param name="scaleDescription" updates="constant" val="" valType="str"/>
+        <Param name="low" updates="constant" val="1" valType="code"/>
+        <Param name="high" updates="constant" val="7" valType="code"/>
+        <Param name="labels" updates="constant" val="" valType="str"/>
+        <Param name="marker" updates="constant" val="triangle" valType="str"/>
+        <Param name="markerStart" updates="constant" val="" valType="str"/>
+        <Param name="singleClick" updates="constant" val="False" valType="bool"/>
+        <Param name="disappear" updates="constant" val="False" valType="bool"/>
+        <Param name="showAccept" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
+        <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="0.5" valType="code"/>
+        <Param name="tickHeight" updates="constant" val="" valType="str"/>
+        <Param name="pos" updates="constant" val="0.8, 0.8" valType="str"/>
+        <Param name="customize_everything" updates="constant" val="" valType="str"/>
+      </RatingScaleComponent>
+      <TextComponent name="text">
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.8, 0.9)" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="text" updates="set every repeat" val="$question" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="preferences">
+      <ImageComponent name="image_2">
+        <Param name="name" updates="None" val="image_2" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="size" updates="constant" val="(1920, 1080)" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="image" updates="set every repeat" val="$imageFile" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+      </ImageComponent>
+      <RatingScaleComponent name="rating_2">
+        <Param name="name" updates="None" val="rating_2" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="visualAnalogScale" updates="constant" val="False" valType="bool"/>
+        <Param name="categoryChoices" updates="constant" val="" valType="str"/>
+        <Param name="scaleDescription" updates="constant" val="" valType="str"/>
+        <Param name="low" updates="constant" val="1" valType="code"/>
+        <Param name="high" updates="constant" val="7" valType="code"/>
+        <Param name="labels" updates="constant" val="" valType="str"/>
+        <Param name="marker" updates="constant" val="triangle" valType="str"/>
+        <Param name="markerStart" updates="constant" val="" valType="str"/>
+        <Param name="singleClick" updates="constant" val="False" valType="bool"/>
+        <Param name="disappear" updates="constant" val="False" valType="bool"/>
+        <Param name="showAccept" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
+        <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="0.5" valType="code"/>
+        <Param name="tickHeight" updates="constant" val="" valType="str"/>
+        <Param name="pos" updates="constant" val="0.8, 0.8" valType="str"/>
+        <Param name="customize_everything" updates="constant" val="" valType="str"/>
+      </RatingScaleComponent>
+      <TextComponent name="text_2">
+        <Param name="name" updates="None" val="text_2" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.8, 0.9)" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="text" updates="constant" val="Importance" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="universe">
+      <ImageComponent name="image_3">
+        <Param name="name" updates="None" val="image_3" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="size" updates="constant" val="(1920,1080)" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="image" updates="set every repeat" val="$imageFile" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="instructions">
+      <TextComponent name="intruText">
+        <Param name="name" updates="None" val="intruText" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="[0,0]" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="text" updates="constant" val="Imagine you are travelling on a spaceship through deep space. Your spaceship automatically takes photographs of
+planets as you fly through the universe. Your job is to decide which photographs are important to send back to
+earth for the rest of humanity to see. &amp;#10;&amp;#10;This experiment consists of 4 phases. Before each phase begins you will be given instructions for the upcoming phase.
+&amp;#10;&amp;#10;Phase 1:&amp;#10;You will watch passively while the computer displays, one at a time, all the planets you will see in remainder
+of the experiment. The purpose of this phase is to make you familiar with the photographs. All you have
+to do in this phase is watch.&amp;#10;&amp;#10;Press any key to begin Phase 1" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="5" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instructions1">
+      <TextComponent name="instrutext1">
+        <Param name="name" updates="None" val="instrutext1" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="text" updates="constant" val="Phase 2:
+You will be presented with one photograph at a time. In the top right corner of the screen you will see the
+word “importance” and a scale from 1-7 below it. Your job is to use the mouse to click the value on the
+scale that best reflects how important it is to send this photograph back to earth for the rest of humanity,
+with 1 being least important and 7 being most important.&amp;#10;&amp;#10;Press any button to begin phase 2." valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instructions2">
+      <TextComponent name="instruText2">
+        <Param name="name" updates="None" val="instruText2" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="text" updates="constant" val="Phase 3:
+You will be presented with one photograph at a time. In the top right corner of the screen you will see one
+of the following words; “water”. “rings”, “blue-green”, “red-yellow”, “moons”, or “clouds”, and a scale
+from 1-7 below it. Your job is to use the mouse to click the value on the scale that best reflects how
+prominent the feature is, with 1 being least prominent and 7 being most prominent. The feature is
+indicated by the word above scale (for example “water”).&amp;#10;&amp;#10;Press any button to begin phase 3." valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_4">
+        <Param name="name" updates="None" val="key_resp_4" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instructions3">
+      <TextComponent name="instruText3">
+        <Param name="name" updates="None" val="instruText3" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="text" updates="constant" val="You will be presented with one photograph at a time. In the top right corner of the screen you will see the
+word “importance” and a scale from 1-7 below it. Your job is to use the mouse to click the value on the
+scale that best reflects how important it is to send this photograph back to earth for the rest of humanity,
+with 1 being least important and 7 being most important.&amp;#10;&amp;#10;Press any button to begin phase 4." valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_5">
+        <Param name="name" updates="None" val="key_resp_5" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="end">
+      <TextComponent name="text_3">
+        <Param name="name" updates="None" val="text_3" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="5" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="text" updates="constant" val="Thank you for participating! Please exit the room quietly." valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instructions"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_universe">
+      <Param name="name" updates="None" val="trials_universe" valType="code"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('imageFile', 'images/scr00000.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00001.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00002.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00003.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00004.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00005.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00006.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00007.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00008.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00009.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00010.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00011.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00012.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00013.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00014.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00015.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00016.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00017.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00018.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00019.jpg'), ('question', 'Importance')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="planetExpPreference.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+    </LoopInitiator>
+    <Routine name="universe"/>
+    <LoopTerminator name="trials_universe"/>
+    <Routine name="instructions1"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_preference1">
+      <Param name="name" updates="None" val="trials_preference1" valType="code"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('imageFile', 'images/scr00000.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00001.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00002.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00003.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00004.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00005.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00006.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00007.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00008.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00009.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00010.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00011.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00012.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00013.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00014.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00015.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00016.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00017.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00018.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00019.jpg'), ('question', 'Importance')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="planetExpPreference.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+    </LoopInitiator>
+    <Routine name="preferences"/>
+    <LoopTerminator name="trials_preference1"/>
+    <Routine name="instructions2"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_sensoryJudgement">
+      <Param name="name" updates="None" val="trials_sensoryJudgement" valType="code"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('imageFile', 'images/scr00000.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00000.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00000.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00000.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00000.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00000.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00001.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00001.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00001.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00001.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00001.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00001.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00002.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00002.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00002.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00002.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00002.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00002.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00003.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00003.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00003.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00003.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00003.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00003.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00004.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00004.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00004.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00004.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00004.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00004.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00005.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00005.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00005.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00005.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00005.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00005.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00006.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00006.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00006.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00006.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00006.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00006.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00007.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00007.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00007.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00007.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00007.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00007.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00008.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00008.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00008.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00008.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00008.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00008.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00009.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00009.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00009.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00009.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00009.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00009.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00010.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00010.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00010.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00010.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00010.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00010.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00011.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00011.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00011.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00011.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00011.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00011.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00012.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00012.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00012.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00012.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00012.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00012.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00013.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00013.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00013.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00013.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00013.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00013.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00014.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00014.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00014.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00014.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00014.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00014.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00015.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00015.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00015.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00015.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00015.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00015.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00016.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00016.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00016.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00016.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00016.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00016.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00017.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00017.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00017.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00017.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00017.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00017.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00018.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00018.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00018.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00018.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00018.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00018.jpg'), ('question', 'Red-yellow')]), OrderedDict([('imageFile', 'images/scr00019.jpg'), ('question', 'Water')]), OrderedDict([('imageFile', 'images/scr00019.jpg'), ('question', 'Clouds')]), OrderedDict([('imageFile', 'images/scr00019.jpg'), ('question', 'Rings')]), OrderedDict([('imageFile', 'images/scr00019.jpg'), ('question', 'Moons')]), OrderedDict([('imageFile', 'images/scr00019.jpg'), ('question', 'Blue-green ')]), OrderedDict([('imageFile', 'images/scr00019.jpg'), ('question', 'Red-yellow')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="planetExp.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials_sensoryJudgement"/>
+    <Routine name="instructions3"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_preferenceFinal">
+      <Param name="name" updates="None" val="trials_preferenceFinal" valType="code"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('imageFile', 'images/scr00000.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00001.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00002.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00003.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00004.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00005.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00006.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00007.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00008.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00009.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00010.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00011.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00012.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00013.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00014.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00015.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00016.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00017.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00018.jpg'), ('question', 'Importance')]), OrderedDict([('imageFile', 'images/scr00019.jpg'), ('question', 'Importance')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="planetExpPreference.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="Selected rows" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+    </LoopInitiator>
+    <Routine name="preferences"/>
+    <LoopTerminator name="trials_preferenceFinal"/>
+    <Routine name="end"/>
+  </Flow>
+</PsychoPy2experiment>
